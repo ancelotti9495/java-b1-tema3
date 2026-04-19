@@ -26,7 +26,7 @@ public class Developer extends Employee {
     public void setLanguage(String language) {
         // TODO: validate and assign language
         if(language == null || language.isEmpty()){
-            System.out.println("Programing language cannot be empty");
+            System.out.println("Programming language cannot be empty.");
             return;
         }this.language=language;
     }
@@ -37,9 +37,9 @@ public class Developer extends Employee {
     public String toString() {
         // TODO: return formatted string
         return 
-        "Developer: "+getId()+","+
-        "Name: "+getName()+","+
-        "Salary: "+getSalary()+" €,"+
+        "Developer: "+getId()+", "+
+        "Name: "+getName()+", "+
+        "Salary: "+getSalary()+"€, "+
         "Language: "+getLanguage();      
         
     }

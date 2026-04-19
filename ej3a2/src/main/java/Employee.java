@@ -85,17 +85,14 @@ public class Employee {
     }
 
     // Constructor: initialize id, name, salary
-    public Employee(){
-
-    }
     // Use 'this' for id and call setters for name and salary
     public Employee(int id, String name, double salary) {
         // TODO: assign id
         this.id = id;
         // TODO: call setName(name)
-        this.setName(name);
+        setName(name);
         // TODO: call setSalary(salary)
-        this.setSalary(salary);
+        setSalary(salary);
     }
 
     // Getter for id
@@ -121,7 +118,7 @@ public class Employee {
     public void setName(String name) {
         // TODO: validate and assign name
         if(name ==null||name.isEmpty()){
-            System.out.println("name cannot be empty");
+            System.out.println("Name cannot be empty.");
             return;
         }this.name=name;
     }
@@ -137,7 +134,7 @@ public class Employee {
     public void setSalary(double salary) {
         // TODO: validate and assign salary
          if(salary< (double)0.0F){
-            System.out.println("Salary cannot be negative");
+            System.out.println("Salary cannot be negative.");
             return;
         }this.salary = salary;
     }
