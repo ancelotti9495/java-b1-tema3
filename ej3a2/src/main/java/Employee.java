@@ -93,15 +93,15 @@ public class Employee {
         // TODO: assign id
         this.id = id;
         // TODO: call setName(name)
-        setName(name);
+        this.setName(name);
         // TODO: call setSalary(salary)
-        setSalary(salary);
+        this.setSalary(salary);
     }
 
     // Getter for id
     public int getId() {
         // TODO: return id
-        return id;
+        return this.id;
     }
 
     // Setter for id
@@ -113,7 +113,7 @@ public class Employee {
     // Getter for name
     public String getName() {
         // TODO: return name
-        return name;
+        return this.name;
     }
 
     // Setter for name
@@ -129,14 +129,14 @@ public class Employee {
     // Getter for salary
     public double getSalary() {
         // TODO: return salary
-               return salary;
+               return this.salary;
     }
 
     // Setter for salary
     // If salary is negative, print "Salary cannot be negative."
     public void setSalary(double salary) {
         // TODO: validate and assign salary
-         if(salary<0){
+         if(salary< (double)0.0F){
             System.out.println("Salary cannot be negative");
             return;
         }this.salary = salary;
@@ -148,7 +148,7 @@ public class Employee {
     // -------------------------------------------------------------
     
     public static void main(String[] args) {
-        Developer d = new Developer(1, "Laura", 3000.0, "Java");
+        Developer d = new Developer(1, "Carla", 3000.0, "Java");
         System.out.println(d);
         d.setName("");
         d.setSalary(-500);

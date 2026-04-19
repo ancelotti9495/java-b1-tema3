@@ -11,13 +11,13 @@ public class Developer extends Employee {
         // TODO: call super constructor with id, name, salary
         super(id,name,salary);
         // TODO: call setLanguage(language)
-        setLanguage(language);
+        this.setLanguage(language);
     }
 
     // Getter for language
     public String getLanguage() {
         // TODO: return language
-        return language;
+        return this.language;
         
     }
 
