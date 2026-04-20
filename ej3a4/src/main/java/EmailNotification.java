@@ -4,10 +4,12 @@ public class EmailNotification extends Notification {
     public EmailNotification(String recipient, String subject) {
         super(recipient);
         // TODO: assign subject
+        this.subject=subject;
     }
 
     @Override
     public void send() {
         // TODO: print "Sending EMAIL to <recipient> with subject: <subject>"
+        System.out.println("Sending EMAIL to "+recipient+" with subject: "+subject);
     }
 }
