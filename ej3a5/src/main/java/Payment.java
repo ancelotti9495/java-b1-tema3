@@ -146,6 +146,10 @@ public abstract class Payment {
 
     public Payment(double amount) {
         // TODO: Validate amount. If negative, print "Amount must be positive."
+        if(amount<0){
+            System.out.println("Amount must be positive.");
+            }
+            this.amount=amount;        
     }
 
     public abstract void processPayment();
