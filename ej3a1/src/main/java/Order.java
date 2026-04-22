@@ -98,7 +98,8 @@ public class Order {
     public void setCustomer(String customer) {
         // TODO: validate and assign customer
         if(customer == null || customer.isEmpty()){
-            System.out.println("Customer name cannot be empty");
+            System.out.println("Customer name cannot be empty.");
+            return;
         }
         this.customer = customer;
     }
@@ -115,7 +116,8 @@ public class Order {
     public void setAmount(double amount) {
         // TODO: validate and assign amount
         if(amount<0){
-            System.out.println("Amount cannot be negative");
+            System.out.println("Amount cannot be negative.");
+            return;
         }
         this.amount = amount;
     }
@@ -124,7 +126,7 @@ public class Order {
     @Override
     public String toString() {
         // TODO: return "Order: " + id + ", Customer: " + customer + ", Amount: " + amount + "€"
-        return "Order: "+ id+" , Customer "+ customer+", Amount: "+ amount+" €" ;   
+        return "Order: "+id+", Customer: "+customer+", Amount: "+ amount+"€" ;   
     }
 	 // -------------------------------------------------------------
     // Test manual per a probar amb l'IDE
